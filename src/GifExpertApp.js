@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory'
 import { GifGrid } from './components/GifGrid'
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ( {defaultCategories = []}) => {
 
 
-	const [categories, setCategories] = useState(['Fiumba'])
+	const [categories, setCategories] = useState(defaultCategories)
 
 
 
